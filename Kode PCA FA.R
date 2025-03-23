@@ -76,6 +76,7 @@ head(data_scaled)
 correlation_matrix <- cor(data_scaled)
 heatmap(correlation_matrix)
 
+#----PCA---------------
 pca_result <- prcomp(data_scaled, center = TRUE, scale. = TRUE)
 
 summary(pca_result)
